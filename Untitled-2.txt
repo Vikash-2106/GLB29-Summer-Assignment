@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+// WAP TO CHECK WHETHER A NUMBER IS PALINDROME
+int main(){
+    int n , digit , rev=0 ,num;
+    cout << "Enter the number : ";
+    cin >> n;
+    num = n;
+     while(n!=0){
+    digit = n%10;
+    rev = rev*10 + digit;
+    n/=10;
+  }
+  cout << "The reverse of the given number is "<< rev<<endl;
+  if(num==rev){
+    cout << "The number is palindrome.";
+  }
+  else{
+    cout << "The number is not palindrome.";
+  }
+}

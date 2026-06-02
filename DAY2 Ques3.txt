@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+// WAP TO FIND THE PRODUCT OF THE DIGITS
+int main(){
+    int n , digit ,pro =1;
+    cout << "enter the number : ";
+    cin >> n;
+    while(n!=0){
+        digit = n%10;
+        pro = pro * digit;
+        n/=10;
+    }
+    cout << "The product of the digits of given number is : "<<pro;
+}
